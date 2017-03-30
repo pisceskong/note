@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.hechao.mynote.ui" android:versionCode="1" android:versionName="1.2">
+	<application android:icon="@drawable/sketchy_paper_008"
+		android:label="@string/app_name">
+		<receiver android:name="com.hechao.mynote.ui.MyNote">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/my_note_widget" />
+		</receiver>
+		
+		<receiver android:name="com.hechao.mynote.ui.BootBroadcastReceiver">  
+                <intent-filter>  
+                    <action android:name="android.intent.action.BOOT_COMPLETED"></action>  
+                    <category android:name="android.intent.category.LAUNCHER" />  
+                </intent-filter>  
+        </receiver>  
+
+		<activity android:name=".MyNoteConf"
+			android:windowSoftInputMode="adjustResize">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyNoteEdit"
+			android:windowSoftInputMode="adjustResize"/>
+	</application>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-sdk android:minSdkVersion="7" />
+</manifest> 

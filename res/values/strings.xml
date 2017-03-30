@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MyNote!</string>
+    <string name="app_name">MyNote</string>
+    <string name="widget_string">MyNote</string>
+    <string name="note_title">Please Input Note Content:</string>
+    <string name="edithint">input sth here~</string>
+    <string name="input_tip">please press menu key to edit and save</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="savesucc">Save success</string>
+    <string name="savefail">please input sth</string>
+    <string name="input_title_tip">please input title</string>
+    <string name="titlehint">title</string>
+</resources>

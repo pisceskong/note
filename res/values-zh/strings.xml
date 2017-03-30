@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MyNote!</string>
+    <string name="app_name">我的便签</string>
+    <string name="widget_string"></string>
+    <string name="note_title">请输入便签内容:</string>
+    <string name="edithint">在这里输入内容...</string>
+    <string name="input_tip">按menu可以进行编辑和保存</string>
+    <string name="edit">编辑</string>
+    <string name="save">保存</string>
+    <string name="savesucc">保存成功</string>
+    <string name="savefail">请输入标题</string>
+    <string name="input_title_tip">请输入标题</string>
+    <string name="titlehint">标题</string>
+</resources>
